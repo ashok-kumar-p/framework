@@ -13,5 +13,7 @@
 		
 		<mapping class="com.jspiders.relation.dto.PersonDTO" />
 		<mapping class="com.jspiders.relation.dto.PassportDTO" />
+		<mapping class="com.jspiders.relation.dto.AirplaneDTO" />
+		<mapping class="com.jspiders.relation.dto.EngineDTO" />
 	</session-factory>
 </hibernate-configuration>
