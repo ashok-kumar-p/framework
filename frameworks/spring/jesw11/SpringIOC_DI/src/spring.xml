@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+   <!-- <bean id="c1" class="com.jspiders.demo.bean.Car">
+	<constructor-arg value="10" />
+	<constructor-arg value="Honda"/>
+   </bean> -->
+	
+	<!-- <bean id="c1" class="com.jspiders.demo.bean.Car">
+	<constructor-arg value="10" type="int"/>
+	<constructor-arg value="1000000" type="double" />
+	</bean> -->
+
+	<!-- <bean id="c1" class="com.jspiders.demo.bean.Car">
+	<constructor-arg value="Honda" type="String"/>
+	<constructor-arg value="City" type="String" />
+	<constructor-arg value="Petrol" type="String" />
+	</bean> -->
+	
+	<!-- <bean id="c1" class="com.jspiders.demo.bean.Car">
+		<property name="price" value="1100000"/>
+	</bean> -->
+	
+	<!-- <bean id="c2" class="com.jspiders.demo.bean.Car">
+	
+	<constructor-arg value="Honda" type="String"/>
+	<constructor-arg value="City" type="String" />
+	<constructor-arg value="Petrol" type="String" />
+	<property name="price" value="1100000"/>
+	<property name="colour" value="Black"/>
+	</bean> -->
+	   
+	   
+	   
+	<bean id="c2" class="com.jspiders.demo.bean.Car">
+		<constructor-arg value="Honda" />
+		<constructor-arg value="Petrol"/>
+		<constructor-arg ref="m1"/>
+		<property name="acc" ref="a1"/>
+	</bean>
+	
+	<bean id="a1" class="com.jspiders.demo.bean.Accessories">
+		<constructor-arg value="Alloy Wheels"/>
+		<constructor-arg value="Ferrari"/>
+		<property name="price" value="60000"/>
+	</bean>
+	
+	<bean id="m1" class="com.jspiders.demo.bean.MusicSystem">
+		<constructor-arg value="JBL"/>
+		<constructor-arg value="Flip4"/>
+		<property name="price" value="15000"/>
+	</bean>
+
+	
+	  
+</beans>
+
